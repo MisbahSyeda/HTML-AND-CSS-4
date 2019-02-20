@@ -1,0 +1,109 @@
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    cursor:pointer;
+  }
+  /*hide default*/
+  .container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  .hover-container:hover{
+    background-color:rgba(153, 187, 255,0.2);;
+    }
+    /*create custom*/
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius:5px;
+    background-color: #eee;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+ .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+body{
+    margin:15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table td{
+    border: 1px solid #ddd;
+    border-left-style: none;
+    border-right-style: none;
+    padding:8px;
+}
+table{
+    border-top:2px solid #999;
+    border-bottom:2px solid #999;
+    border-collapse: collapse;
+    width:1200px;
+}
+.button{
+    border-radius:20px;
+    width:85px;
+    height:25px;
+    font-size:15px;
+}
+.button2{
+    border-color: rgb(0, 64, 255);
+    background-color:white;
+    color:rgb(0, 64, 255);
+    position:static;
+    right:70;
+    position: relative;
+    left:700px;
+    bottom:9px;
+    text-align: left;
+    margin:9px;
+}
+.red-button{
+    color:white;
+    background-color: red;
+    border:none;
+}
+.orange-button{
+    color:white;
+    background-color: orange;
+    border:none;
+}
+.yellow-button{
+    color:white;
+    background-color:rgb(240, 240, 58);
+    border:none;
+}
+.green-button{
+    color:white;
+    background-color:rgb(0, 230, 0);
+    border:none;
+}
+.purple-button{
+    color:white;
+    background-color: rgb(230, 0, 172);
+    border:none;
+}
+#last{
+position:relative;
+left:850px;
+padding:15px;
+}
+#select{
+border:none;
+}
+#event{
+font-size:29px;
+font-weight:bold;
+margin:30px;
+padding:7px;
+}
